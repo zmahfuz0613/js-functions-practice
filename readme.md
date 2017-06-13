@@ -1,13 +1,3 @@
----
-title: Functions Lab
-type: lab
-duration: "1:25"
-creator:
-  name: Gerry Mathe, Alex Notov
-  city: London, San Francisco
-competencies: Programming
----
-
 # Functions Lab
 
 ## Introduction
@@ -34,7 +24,7 @@ Follow the requirements in the list below:
 
 **Bonus**
 
-1. Attach the function `reverseString` (from question 6) to the object String so that it is possible to call: `"General Assembly".reverseString()`.
+1. Attach the function `reverseString` (from question 6) to the object String (as `reverse`) so that it is possible to call: `"General Assembly".reverse()`.
 
 2. Write a function that takes a string as an argument and returns an object where:
 

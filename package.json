@@ -1,0 +1,48 @@
+{
+  "name": "js-functions-lab",
+  "version": "1.5.0",
+  "description": "JavaScript Functions Lab",
+  "private": true,
+  "scripts": {
+    "syntax-fix": "eslint . --fix",
+    "test": "open ./test/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:wdi-nyc/js-functions-lab.git"
+  },
+  "keywords": [
+    "javascript",
+    "lab",
+    "unit-1",
+    "00-programming",
+    "data-types",
+    "arrays"
+  ],
+  "ga_co": {
+    "duration": "1:25",
+    "type": "lab",
+    "competencies": "programming",
+    "city": [
+      "London",
+      "San Francisco",
+      "New York"
+    ]
+  },
+  "author": "Gerry Mathe",
+  "contributors": [
+    "Jason Seminara <js@ga.co>",
+    "Alex Notov"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jsdoc-to-markdown": "^3.0.0"
+  },
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
