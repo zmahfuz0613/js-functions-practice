@@ -64,7 +64,8 @@ Takes two numbers as arguments and returns the largest of them.
 
 **Kind**: global function  
 **Returns**: <code>Number</code> - - the smaller of x and y  
-**Hint**: Use the if-else construct available in Javascript. Do some Googling to figure this out if you forget how conditionals work.  
+**Hint**: Use the if-else construct available in Javascript.
+Do some Googling to figure this out if you forget how conditionals work.  
 
 | Param | Type | Description |
 | --- | --- | --- |

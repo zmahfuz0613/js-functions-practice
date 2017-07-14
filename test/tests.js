@@ -1,4 +1,17 @@
 /* eslint-env mocha */
+/* global expect,
+  maxOfTwoNumbers,
+  maxOfThree,
+  isCharacterAVowel,
+  sumArray,
+  multiplyArray,
+  numberOfArguments,
+  reverseString,
+  findLongestWord,
+  filterLongWords,
+  reverse,
+  characterCounts
+*/
 
 describe('JavaScript Functions Lab', () => {
   describe('#maxOfTwoNumbers()', () => {

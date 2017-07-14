@@ -7,7 +7,8 @@
 /**
  * @func maxOfTwoNumbers
  * @desc Takes two numbers as arguments and returns the largest of them.
- * @hint Use the if-else construct available in Javascript. Do some Googling to figure this out if you forget how conditionals work.
+ * @hint Use the if-else construct available in Javascript.
+ * Do some Googling to figure this out if you forget how conditionals work.
  * @param {Number} x - first number to evaulate
  * @param {Number} y - second number to evaulate
  * @returns {Number} - the smaller of x and y
@@ -70,6 +71,7 @@
 > multiplyArray(1, 2, 3, 4)
 => 24
  */
+
 
 // Question 5
 /**
