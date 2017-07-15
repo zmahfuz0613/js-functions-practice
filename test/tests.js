@@ -40,6 +40,19 @@ describe('JavaScript Functions Lab', () => {
       // ACT
       expect(actual).to.eql(expected);
     });
+
+    it('should return the correct answer if the args are equal', () => {
+      // ARRANGE
+      const smaller = 10;
+      const larger = 10;
+      const expected = larger;
+
+      // ASSERT
+      const actual = maxOfTwoNumbers(larger, smaller);
+
+      // ACT
+      expect(actual).to.eql(expected);
+    });
   });
 
   describe('#maxOfThree()', () => {
@@ -133,7 +146,7 @@ describe('JavaScript Functions Lab', () => {
   describe('#multiplyArray()', () => {
     it('should multiply the array', () => {
       // ARRANGE
-      const expected = 51408e7;
+      const expected = 5143248e5;
       const arr = [9, 400, 400, 10, 17, 2101];
 
       // ACT
@@ -232,9 +245,6 @@ describe('JavaScript Functions Lab', () => {
   });
 
   describe('#reverse()', () => {
-    beforeEach(() => {
-      String.prototype.reverse = reverseString;
-    });
 
     afterEach(() => {
       String.prototype.reverse = undefined;
@@ -256,6 +266,7 @@ describe('JavaScript Functions Lab', () => {
     it('should return the character count for each string', () => {
       // ARRANGE
       const expected = {
+        ' ': 1,
         a: 2,
         b: 1,
         e: 3,
@@ -272,7 +283,7 @@ describe('JavaScript Functions Lab', () => {
       const actual = characterCounts('General Assembly');
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).to.deep.eql(expected);
     });
   });
 });

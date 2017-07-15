@@ -35,6 +35,7 @@ For example, calling the function with the string "General Assembly" will return
 
 ```javascript
 {
+  " ": 1,
   a: 2,
   b: 1,
   e: 3,
