@@ -48,6 +48,19 @@ describe('JavaScript Functions Lab', () => {
       // ACT
       expect(actual).to.eql(expected);
     });
+
+    it('should even work with letters', () => {
+      // ARRANGE
+      const smaller = 'a';
+      const larger = 'z';
+      const expected = larger;
+
+      // ASSERT
+      const actual = x.maxOfTwoNumbers(larger, smaller);
+
+      // ACT
+      expect(actual).to.eql(expected);
+    });
   });
 
   describe('#maxOfThree()', () => {

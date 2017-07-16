@@ -13,8 +13,8 @@ const jsFunctionsLab = (() => {
    * @param {Number} y - second number to evaulate
    * @returns {Number} - the smaller of x and y
    * @example
-  > maxOfTwoNumbers(99, 5)
-  => 99
+> maxOfTwoNumbers(99, 5)
+=> 99
    */
 
   function maxOfTwoNumbers(x, y) {
@@ -30,8 +30,8 @@ const jsFunctionsLab = (() => {
    * @param {Number} z - third number to evaulate
    * @returns {Number} - the larger of x, y, and z
    * @example
-  > maxOfThree(4, 5, 9)
-  => 9
+> maxOfThree(4, 5, 9)
+=> 9
    */
 
   function maxOfThree(x, y, z) {
@@ -46,11 +46,11 @@ const jsFunctionsLab = (() => {
    * @returns {Boolean} true if it is a vowel; false, otherwise
    * BONUS: this can be done on one line!
    * @example
-  > isCharacterAVowel('a')
-  => true
+> isCharacterAVowel('a')
+=> true
 
-  > isCharacterAVowel('n')
-  => false
+> isCharacterAVowel('n')
+=> false
    */
 
   function isCharacterAVowel(letter) {
@@ -64,8 +64,8 @@ const jsFunctionsLab = (() => {
    * @returns {Number} the sum of the items in the array
    * BONUS: this can be done on one line!
    * @example
-  > sumArray(1, 2, 3, 4)
-  => 10
+> sumArray(1, 2, 3, 4)
+=> 10
    */
 
   function sumArray(arr) {
@@ -81,8 +81,8 @@ const jsFunctionsLab = (() => {
    * @returns {Number} the product of the items in the array
    * BONUS: this can be done on one line!
    * @example
-  > multiplyArray(1, 2, 3, 4)
-  => 24
+> multiplyArray(1, 2, 3, 4)
+=> 24
    */
 
   function multiplyArray(arr) {
@@ -96,11 +96,11 @@ const jsFunctionsLab = (() => {
    * @param {*} arg
    * @returns {Number} the number of arguments passed to the function
    * @example
-  > numberOfArguments(6, 3, 8, 2, 'bar', 'foo')
-  => 6
+> numberOfArguments(6, 3, 8, 2, 'bar', 'foo')
+=> 6
 
-  > numberOfArguments()
-  => 0
+> numberOfArguments()
+=> 0
    */
 
   function numberOfArguments() {
@@ -129,8 +129,8 @@ const jsFunctionsLab = (() => {
    * @param {Array} arrayOfWords - an array of words
    * @returns {Number} the length of the longest word in the array
    * @example
-  > findLongestWord(['short', 'longest', 'longer'])
-  => 7
+> findLongestWord(['short', 'longest', 'longer'])
+=> 7
    */
 
   function findLongestWord(arrayOfWords) {
@@ -145,8 +145,8 @@ const jsFunctionsLab = (() => {
    * @param {Number} i
    * @returns {Array} a new array of words that are longer than `i` characters long.
    * @example
-  > filterLongWords(['short', 'longest', 'longer'], 5)
-  => ['longest', 'longer']
+> filterLongWords(['short', 'longest', 'longer'], 5)
+=> ['longest', 'longer']
    */
 
   function filterLongWords(arrayOfWords) {
@@ -164,19 +164,19 @@ const jsFunctionsLab = (() => {
     - the values are the number of occurrences for each letter, regardless of the case
 
    * @example
-  > characterCounts('General Assembly');
-  => {
-    a: 2,
-    b: 1,
-    e: 3,
-    g: 1,
-    l: 2,
-    m: 1,
-    n: 1,
-    r: 1,
-    s: 2,
-    y: 1
-  }
+> characterCounts('General Assembly');
+=> {
+  a: 2,
+  b: 1,
+  e: 3,
+  g: 1,
+  l: 2,
+  m: 1,
+  n: 1,
+  r: 1,
+  s: 2,
+  y: 1
+}
 
    */
 

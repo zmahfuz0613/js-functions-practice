@@ -1,7 +1,7 @@
-## Classes
+## Constants
 
 <dl>
-<dt><a href="#String">String</a></dt>
+<dt><a href="#jsFunctionsLab">jsFunctionsLab</a></dt>
 <dd></dd>
 </dl>
 
@@ -14,7 +14,7 @@
 <dt><a href="#maxOfThree">maxOfThree(x, y, z)</a> ⇒ <code>Number</code></dt>
 <dd><p>Takes three numbers as arguments and returns the largest of them.</p>
 </dd>
-<dt><a href="#isCharacterAVowel">isCharacterAVowel(char)</a> ⇒ <code>Boolean</code></dt>
+<dt><a href="#isCharacterAVowel">isCharacterAVowel(letter)</a> ⇒ <code>Boolean</code></dt>
 <dd><p>Takes a letter, determines if it&#39;s a vowel</p>
 </dd>
 <dt><a href="#sumArray">sumArray(arr)</a> ⇒ <code>Number</code></dt>
@@ -26,7 +26,7 @@
 <dt><a href="#numberOfArguments">numberOfArguments(arg)</a> ⇒ <code>Number</code></dt>
 <dd><p>Takes any number of arguments, returns how many were passed</p>
 </dd>
-<dt><a href="#reverseString">reverseString(stringToReverse)</a> ⇒ <code><a href="#String">String</a></code></dt>
+<dt><a href="#reverseString">reverseString(stringToReverse)</a> ⇒ <code>String</code></dt>
 <dd><p>Takes a string, returns the reverse of it.</p>
 </dd>
 <dt><a href="#findLongestWord">findLongestWord(arrayOfWords)</a> ⇒ <code>Number</code></dt>
@@ -40,23 +40,12 @@
 </dd>
 </dl>
 
-<a name="String"></a>
+<a name="jsFunctionsLab"></a>
 
-## String
-**Kind**: global class  
-<a name="String.reverse"></a>
-
-### String.reverse() ⇒ [<code>String</code>](#String)
-String method to reverse an existing string
-
-**Kind**: static method of [<code>String</code>](#String)  
-**Returns**: [<code>String</code>](#String) - the reversed string  
-**See**: reverseString  
-**Example**  
-```js
-> 'General Assembly'.reverseString()
-=> "ylbmessA lareneG"
-```
+## jsFunctionsLab
+**Kind**: global constant  
+**Since**: 2017-07-12  
+**Author**: Jason Seminara <js@ga.co>  
 <a name="maxOfTwoNumbers"></a>
 
 ## maxOfTwoNumbers(x, y) ⇒ <code>Number</code>
@@ -75,7 +64,7 @@ Do some Googling to figure this out if you forget how conditionals work.
 **Example**  
 ```js
 > maxOfTwoNumbers(99, 5)
-=> 99
+  => 99
 ```
 <a name="maxOfThree"></a>
 
@@ -98,7 +87,7 @@ Takes three numbers as arguments and returns the largest of them.
 ```
 <a name="isCharacterAVowel"></a>
 
-## isCharacterAVowel(char) ⇒ <code>Boolean</code>
+## isCharacterAVowel(letter) ⇒ <code>Boolean</code>
 Takes a letter, determines if it's a vowel
 
 **Kind**: global function  
@@ -107,15 +96,15 @@ BONUS: this can be done on one line!
 
 | Param | Type | Description |
 | --- | --- | --- |
-| char | [<code>String</code>](#String) | string of length 1 |
+| letter | <code>String</code> | string of length 1 |
 
 **Example**  
 ```js
 > isCharacterAVowel('a')
-=> true
+  => true
 
-> isCharacterAVowel('n')
-=> false
+  > isCharacterAVowel('n')
+  => false
 ```
 <a name="sumArray"></a>
 
@@ -133,7 +122,7 @@ BONUS: this can be done on one line!
 **Example**  
 ```js
 > sumArray(1, 2, 3, 4)
-=> 10
+  => 10
 ```
 <a name="multiplyArray"></a>
 
@@ -151,7 +140,7 @@ BONUS: this can be done on one line!
 **Example**  
 ```js
 > multiplyArray(1, 2, 3, 4)
-=> 24
+  => 24
 ```
 <a name="numberOfArguments"></a>
 
@@ -168,27 +157,27 @@ Takes any number of arguments, returns how many were passed
 **Example**  
 ```js
 > numberOfArguments(6, 3, 8, 2, 'bar', 'foo')
-=> 6
+  => 6
 
-> numberOfArguments()
-=> 0
+  > numberOfArguments()
+  => 0
 ```
 <a name="reverseString"></a>
 
-## reverseString(stringToReverse) ⇒ [<code>String</code>](#String)
+## reverseString(stringToReverse) ⇒ <code>String</code>
 Takes a string, returns the reverse of it.
 
 **Kind**: global function  
-**Returns**: [<code>String</code>](#String) - the incoming string reversed  
+**Returns**: <code>String</code> - the incoming string reversed  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| stringToReverse | [<code>String</code>](#String) | the string to reverse |
+| stringToReverse | <code>String</code> | the string to reverse |
 
 **Example**  
 ```js
 > reverseString('General Assembly')
-=> "ylbmessA lareneG"
+  => "ylbmessA lareneG"
 ```
 <a name="findLongestWord"></a>
 
@@ -205,7 +194,7 @@ Takes an array of words, returns the length of the longest word.
 **Example**  
 ```js
 > findLongestWord(['short', 'longest', 'longer'])
-=> 7
+  => 7
 ```
 <a name="filterLongWords"></a>
 
@@ -223,7 +212,7 @@ Takes an array of words, returns only the words that are longer than 'i' chars.
 **Example**  
 ```js
 > filterLongWords(['short', 'longest', 'longer'], 5)
-=> ['longest', 'longer']
+  => ['longest', 'longer']
 ```
 <a name="characterCounts"></a>
 
@@ -233,26 +222,26 @@ Takes a string; returns the character count for each letter in the string, regar
 **Kind**: global function  
 **Returns**: <code>Object</code> - an object where:
 
-  - the keys are the characters that occur in the string
-  - the values are the number of occurrences for each letter, regardless of the case  
+    - the keys are the characters that occur in the string
+    - the values are the number of occurrences for each letter, regardless of the case  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| stringToCount | [<code>String</code>](#String) | the string to enumerate |
+| stringToCount | <code>String</code> | the string to enumerate |
 
 **Example**  
 ```js
 > characterCounts('General Assembly');
-=> {
-  a: 2,
-  b: 1,
-  e: 3,
-  g: 1,
-  l: 2,
-  m: 1,
-  n: 1,
-  r: 1,
-  s: 2,
-  y: 1
-}
+  => {
+    a: 2,
+    b: 1,
+    e: 3,
+    g: 1,
+    l: 2,
+    m: 1,
+    n: 1,
+    r: 1,
+    s: 2,
+    y: 1
+  }
 ```
