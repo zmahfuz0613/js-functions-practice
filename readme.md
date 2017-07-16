@@ -11,14 +11,14 @@ This exercise includes **unit tests**, so you'll be able to see instantly if you
 
 ### Getting Started
 
-  1. Fork this repo into your account.
-  1. Once the forking is complete, **clone** the repo onto your computer.
-  1. From the command-line: 
+1. Fork this repo into your account.
+1. Once the forking is complete, **clone** the repo onto your computer.
+1. From the command-line: 
     - `npm i` (this will get all the tools necessary for this exercise).
     - `git co -b solution` to start working on a new solution.
-  1. Open `functions.js`
+1. Open `functions.js`
     - Each function and its behavior are described in the comments
-    - All the function names are already inside the file; you just need to implement the functions by adding code inside each one.
+    - All the function names are already inside the file; you just need to implement the functionby adding code inside each one.
     - Additionally, you can take a look at the full [function documentation].
 
 ### Writing Code and Running Tests
@@ -36,15 +36,15 @@ Run one of the following commands in the Terminal (in this folder):
 ### Deliverable
 
 When you've completed the lab, 
-  1. Commit it and push to Github Enterprise. 
-  2. Create a pull request with your solution.
+1. Commit it and push to Github Enterprise. 
+2. Create a pull request with your solution.
 
 ## Additional Resources
-  1. [MDN Functions]
-  1. [MDN Array]
-  1. [MDN String]
-  1. [MDN Object]
-  1. [Test-Driven Development]
+1. [MDN Functions]
+1. [MDN Array]
+1. [MDN String]
+1. [MDN Object]
+1. [Test-Driven Development]
 
 [Test-Driven Development]: https://en.wikipedia.org/wiki/Test-driven_development#Test-driven_development_cycle
 [MDN Functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
