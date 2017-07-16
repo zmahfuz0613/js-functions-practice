@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "syntax-fix": "eslint . --fix",
-    "test": "open ./test/index.html"
+    "start": "npm i; open ./test/index.html",
+    "test": "mocha ./test/tests.js --watch"
   },
   "repository": {
     "type": "git",

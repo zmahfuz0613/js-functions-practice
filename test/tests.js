@@ -1,17 +1,12 @@
 /* eslint-env mocha */
-/* global expect,
-  maxOfTwoNumbers,
-  maxOfThree,
-  isCharacterAVowel,
-  sumArray,
-  multiplyArray,
-  numberOfArguments,
-  reverseString,
-  findLongestWord,
-  filterLongWords,
-  reverse,
-  characterCounts
-*/
+
+if (typeof(chai) === 'undefined') {
+  chai = require('chai');
+  x = require('../functions');
+
+  expect = chai.expect;
+}
+
 
 describe('JavaScript Functions Lab', () => {
   describe('#maxOfTwoNumbers()', () => {
@@ -22,7 +17,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ACT
-      const actual = maxOfTwoNumbers(smaller, larger);
+      const actual = x.maxOfTwoNumbers(smaller, larger);
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -35,7 +30,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ASSERT
-      const actual = maxOfTwoNumbers(larger, smaller);
+      const actual = x.maxOfTwoNumbers(larger, smaller);
 
       // ACT
       expect(actual).to.eql(expected);
@@ -48,7 +43,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ASSERT
-      const actual = maxOfTwoNumbers(larger, smaller);
+      const actual = x.maxOfTwoNumbers(larger, smaller);
 
       // ACT
       expect(actual).to.eql(expected);
@@ -64,7 +59,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = largest;
 
       // ASSERT
-      const actual = maxOfThree(first, second, largest);
+      const actual = x.maxOfThree(first, second, largest);
 
       // ACT
       expect(actual).to.eql(expected);
@@ -79,7 +74,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = largest;
 
       // ASSERT
-      const actual = maxOfThree(largest, first, second);
+      const actual = x.maxOfThree(largest, first, second);
 
       // ACT
       expect(actual).to.eql(expected);
@@ -94,7 +89,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = largest;
 
       // ASSERT
-      const actual = maxOfThree(first, largest, second);
+      const actual = x.maxOfThree(first, largest, second);
 
       // ACT
       expect(actual).to.eql(expected);
@@ -108,9 +103,9 @@ describe('JavaScript Functions Lab', () => {
 
       // ASSERT
       // ACT
-      expect(() => maxOfThree(first, second)).to.throw();
-      expect(() => maxOfThree(first)).to.throw();
-      expect(() => maxOfThree()).to.throw();
+      expect(() => x.maxOfThree(first, second)).to.throw();
+      expect(() => x.maxOfThree(first)).to.throw();
+      expect(() => x.maxOfThree()).to.throw();
     });
   });
 
@@ -119,13 +114,13 @@ describe('JavaScript Functions Lab', () => {
       // ARRANGE
       // ASSERT
       // ACT
-      expect(isCharacterAVowel('a')).to.be.true;
-      expect(isCharacterAVowel('e')).to.be.true;
-      expect(isCharacterAVowel('i')).to.be.true;
-      expect(isCharacterAVowel('o')).to.be.true;
-      expect(isCharacterAVowel('u')).to.be.true;
-      expect(isCharacterAVowel('y')).to.be.false;
-      expect(isCharacterAVowel('x')).to.be.false;
+      expect(x.isCharacterAVowel('a')).to.be.true;
+      expect(x.isCharacterAVowel('e')).to.be.true;
+      expect(x.isCharacterAVowel('i')).to.be.true;
+      expect(x.isCharacterAVowel('o')).to.be.true;
+      expect(x.isCharacterAVowel('u')).to.be.true;
+      expect(x.isCharacterAVowel('y')).to.be.false;
+      expect(x.isCharacterAVowel('x')).to.be.false;
     });
   });
 
@@ -136,7 +131,7 @@ describe('JavaScript Functions Lab', () => {
       const arr = [900, 400, 400, 10, 17, 2100];
 
       // ACT
-      const actual = sumArray(arr);
+      const actual = x.sumArray(arr);
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -150,7 +145,7 @@ describe('JavaScript Functions Lab', () => {
       const arr = [9, 400, 400, 10, 17, 2101];
 
       // ACT
-      const actual = multiplyArray(arr);
+      const actual = x.multiplyArray(arr);
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -162,7 +157,7 @@ describe('JavaScript Functions Lab', () => {
       const arr = [9, 400, 400, 10, 17, 2101, 0];
 
       // ACT
-      const actual = multiplyArray(arr);
+      const actual = x.multiplyArray(arr);
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -176,7 +171,7 @@ describe('JavaScript Functions Lab', () => {
       const args = [6, 3, 'bar', [], {}, () => {}];
 
       // ACT
-      const actual = numberOfArguments(...args);
+      const actual = x.numberOfArguments(...args);
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -187,7 +182,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = 0;
 
       // ACT
-      const actual = numberOfArguments();
+      const actual = x.numberOfArguments();
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -200,7 +195,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = 'ylbmessA lareneG ';
 
       // ACT
-      const actual = reverseString(' General Assembly');
+      const actual = x.reverseString(' General Assembly');
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -211,7 +206,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = 'ylbmessA lareneG';
 
       // ACT
-      const actual = reverseString('General Assembly');
+      const actual = x.reverseString('General Assembly');
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -224,7 +219,7 @@ describe('JavaScript Functions Lab', () => {
       const expected = 7;
 
       // ACT
-      const actual = findLongestWord(['short', 'longest', 'longer']);
+      const actual = x.findLongestWord(['short', 'longest', 'longer']);
 
       // ASSERT
       expect(actual).to.eql(expected);
@@ -237,30 +232,13 @@ describe('JavaScript Functions Lab', () => {
       const expected = ['longest', 'longer'];
 
       // ACT
-      const actual = filterLongWords(['short', 'longest', 'longer'], 5);
+      const actual = x.filterLongWords(['short', 'longest', 'longer'], 5);
 
       // ASSERT
       expect(actual).to.eql(expected);
     });
   });
 
-  describe('#reverse()', () => {
-
-    afterEach(() => {
-      String.prototype.reverse = undefined;
-    });
-
-    it('should reverse a string and be part of the String prototype', () => {
-      // ARRANGE
-      const expected = 'ylbmessA lareneG';
-
-      // ACT
-      const actual = 'General Assembly'.reverse();
-
-      // ASSERT
-      expect(actual).to.eql(expected);
-    });
-  });
 
   describe('#characterCounts()', () => {
     it('should return the character count for each string', () => {
@@ -280,7 +258,7 @@ describe('JavaScript Functions Lab', () => {
       };
 
       // ACT
-      const actual = characterCounts('General Assembly');
+      const actual = x.characterCounts('General Assembly');
 
       // ASSERT
       expect(actual).to.deep.eql(expected);
