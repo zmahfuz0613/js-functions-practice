@@ -64,7 +64,7 @@ Do some Googling to figure this out if you forget how conditionals work.
 **Example**  
 ```js
 > maxOfTwoNumbers(99, 5)
-  => 99
+=> 99
 ```
 <a name="maxOfThree"></a>
 
@@ -101,10 +101,10 @@ BONUS: this can be done on one line!
 **Example**  
 ```js
 > isCharacterAVowel('a')
-  => true
+=> true
 
-  > isCharacterAVowel('n')
-  => false
+> isCharacterAVowel('n')
+=> false
 ```
 <a name="sumArray"></a>
 
@@ -122,7 +122,7 @@ BONUS: this can be done on one line!
 **Example**  
 ```js
 > sumArray(1, 2, 3, 4)
-  => 10
+=> 10
 ```
 <a name="multiplyArray"></a>
 
@@ -140,7 +140,7 @@ BONUS: this can be done on one line!
 **Example**  
 ```js
 > multiplyArray(1, 2, 3, 4)
-  => 24
+=> 24
 ```
 <a name="numberOfArguments"></a>
 
@@ -157,10 +157,10 @@ Takes any number of arguments, returns how many were passed
 **Example**  
 ```js
 > numberOfArguments(6, 3, 8, 2, 'bar', 'foo')
-  => 6
+=> 6
 
-  > numberOfArguments()
-  => 0
+> numberOfArguments()
+=> 0
 ```
 <a name="reverseString"></a>
 
@@ -194,7 +194,7 @@ Takes an array of words, returns the length of the longest word.
 **Example**  
 ```js
 > findLongestWord(['short', 'longest', 'longer'])
-  => 7
+=> 7
 ```
 <a name="filterLongWords"></a>
 
@@ -212,7 +212,7 @@ Takes an array of words, returns only the words that are longer than 'i' chars.
 **Example**  
 ```js
 > filterLongWords(['short', 'longest', 'longer'], 5)
-  => ['longest', 'longer']
+=> ['longest', 'longer']
 ```
 <a name="characterCounts"></a>
 
@@ -221,7 +221,6 @@ Takes a string; returns the character count for each letter in the string, regar
 
 **Kind**: global function  
 **Returns**: <code>Object</code> - an object where:
-
     - the keys are the characters that occur in the string
     - the values are the number of occurrences for each letter, regardless of the case  
 
@@ -232,16 +231,16 @@ Takes a string; returns the character count for each letter in the string, regar
 **Example**  
 ```js
 > characterCounts('General Assembly');
-  => {
-    a: 2,
-    b: 1,
-    e: 3,
-    g: 1,
-    l: 2,
-    m: 1,
-    n: 1,
-    r: 1,
-    s: 2,
-    y: 1
-  }
+=> {
+  a: 2,
+  b: 1,
+  e: 3,
+  g: 1,
+  l: 2,
+  m: 1,
+  n: 1,
+  r: 1,
+  s: 2,
+  y: 1
+}
 ```

@@ -159,7 +159,6 @@ const jsFunctionsLab = (() => {
    * @desc Takes a string; returns the character count for each letter in the string, regardless of case
    * @param {String} stringToCount - the string to enumerate
    * @returns {{char:occuranceCount}} an object where:
-
     - the keys are the characters that occur in the string
     - the values are the number of occurrences for each letter, regardless of the case
 
@@ -187,16 +186,16 @@ const jsFunctionsLab = (() => {
 
   /* ******* */
   return {
-    maxOfTwoNumbers,
-    maxOfThree,
+    characterCounts,
+    filterLongWords,
+    findLongestWord,
     isCharacterAVowel,
-    sumArray,
+    maxOfThree,
+    maxOfTwoNumbers,
     multiplyArray,
     numberOfArguments,
     reverseString,
-    findLongestWord,
-    filterLongWords,
-    characterCounts,
+    sumArray,
   };
 })();
 
