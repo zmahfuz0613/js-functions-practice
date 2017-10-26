@@ -1,12 +1,4 @@
-/* eslint-env mocha */
-
-if (typeof(chai) === 'undefined') {
-  chai = require('chai');
-  x = require('../functions');
-
-  expect = chai.expect;
-}
-
+/* eslint-env mocha, browser, node */
 
 describe('JavaScript Functions Lab', () => {
   describe('#maxOfTwoNumbers()', () => {
