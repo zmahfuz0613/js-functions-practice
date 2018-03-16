@@ -18,7 +18,7 @@ const jsFunctionsLab = (() => {
    */
 
   function maxOfTwoNumbers(x, y) {
-
+    // CODE HERE
   }
 
   // Question 2
@@ -35,7 +35,7 @@ const jsFunctionsLab = (() => {
    */
 
   function maxOfThree(x, y, z) {
-
+    // CODE HERE
   }
 
   // Question 3
@@ -54,8 +54,10 @@ const jsFunctionsLab = (() => {
    */
 
   function isCharacterAVowel(letter) {
-
+    // CODE HERE
   }
+
+
   // Question 4
   /**
    * @func sumArray
@@ -69,7 +71,7 @@ const jsFunctionsLab = (() => {
    */
 
   function sumArray(arr) {
-
+    // CODE HERE
   }
 
 
@@ -86,10 +88,90 @@ const jsFunctionsLab = (() => {
    */
 
   function multiplyArray(arr) {
-
+    // CODE HERE
   }
 
+
   // Question 6
+  /**
+   * @func reverseString
+   * @desc Takes a string, returns the reverse of it.
+   * @param {String} stringToReverse - the string to reverse
+   * @returns {String} the incoming string reversed
+   * @example
+  > reverseString('General Assembly')
+  => "ylbmessA lareneG"
+   */
+
+  function reverseString(stringToReverse) {
+    // CODE HERE
+  }
+
+  // Question 7
+  /**
+   * @func findLongestWord
+   * @desc Takes an array of words, returns the length of the longest word.
+   * @param {Array} arrayOfWords - an array of words
+   * @returns {Number} the length of the longest word in the array
+   * @example
+> findLongestWord(['short', 'longest', 'longer'])
+=> 7
+   */
+
+  function findLongestWord(arrayOfWords) {
+    // CODE HERE
+  }
+
+  // Question 8
+  /**
+   * @func filterLongWords
+   * @desc Takes an array of words, returns only the words that are longer than 'i' chars.
+   * @param {Array} arrayOfWords - an array of words
+   * @param {Number} i
+   * @returns {Array} a new array of words that are longer than `i` characters long.
+   * @example
+> filterLongWords(['short', 'longest', 'longer'], 5)
+=> ['longest', 'longer']
+   */
+
+  function filterLongWords(arrayOfWords) {
+    // CODE HERE
+  }
+
+  // Bonus 1
+  /**
+   * @method characterCounts
+   * @desc Takes a string; returns the character count for each letter in the string, regardless of case
+   * @param {String} stringToCount - the string to enumerate
+   * @returns {{char:occuranceCount}} an object where:
+    - the keys are the characters that occur in the string
+    - the values are the number of occurrences for each letter, regardless of the case
+   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
+   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
+   * @example
+> characterCounts('General Assembly NYC');
+=> {
+  a: 2,
+  b: 1,
+  c: 1,
+  e: 3,
+  g: 1,
+  l: 2,
+  m: 1,
+  n: 2,
+  r: 1,
+  s: 2,
+  y: 2
+}
+
+   */
+
+  function characterCounts(stringToCount) {
+    // CODE HERE
+  }
+
+
+  // Bonus 2
   /**
    * @func numberOfArguments
    * @desc Takes any number of arguments, returns how many were passed
@@ -104,83 +186,7 @@ const jsFunctionsLab = (() => {
    */
 
   function numberOfArguments() {
-
-  }
-
-  // Question 7
-  /**
-   * @func reverseString
-   * @desc Takes a string, returns the reverse of it.
-   * @param {String} stringToReverse - the string to reverse
-   * @returns {String} the incoming string reversed
-   * @example
-  > reverseString('General Assembly')
-  => "ylbmessA lareneG"
-   */
-
-  function reverseString(stringToReverse) {
-
-  }
-
-  // Question 8
-  /**
-   * @func findLongestWord
-   * @desc Takes an array of words, returns the length of the longest word.
-   * @param {Array} arrayOfWords - an array of words
-   * @returns {Number} the length of the longest word in the array
-   * @example
-> findLongestWord(['short', 'longest', 'longer'])
-=> 7
-   */
-
-  function findLongestWord(arrayOfWords) {
-
-  }
-
-  // Question 9
-  /**
-   * @func filterLongWords
-   * @desc Takes an array of words, returns only the words that are longer than 'i' chars.
-   * @param {Array} arrayOfWords - an array of words
-   * @param {Number} i
-   * @returns {Array} a new array of words that are longer than `i` characters long.
-   * @example
-> filterLongWords(['short', 'longest', 'longer'], 5)
-=> ['longest', 'longer']
-   */
-
-  function filterLongWords(arrayOfWords) {
-
-  }
-
-  // Bonus 1
-  /**
-   * @method characterCounts
-   * @desc Takes a string; returns the character count for each letter in the string, regardless of case
-   * @param {String} stringToCount - the string to enumerate
-   * @returns {{char:occuranceCount}} an object where:
-    - the keys are the characters that occur in the string
-    - the values are the number of occurrences for each letter, regardless of the case
-
-   * @example
-> characterCounts('General Assembly');
-=> {
-  a: 2,
-  b: 1,
-  e: 3,
-  g: 1,
-  l: 2,
-  m: 1,
-  n: 1,
-  r: 1,
-  s: 2,
-  y: 1
-}
-
-   */
-
-  function characterCounts(stringToCount) {
-
+    // CODE HERE
   }
 
 

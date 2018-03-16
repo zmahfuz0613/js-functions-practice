@@ -1,4 +1,5 @@
 /* eslint-env mocha, browser, node */
+/* global expect: true, x:true */
 
 describe('JavaScript Functions Lab', () => {
   describe('#maxOfTwoNumbers()', () => {
@@ -119,7 +120,7 @@ describe('JavaScript Functions Lab', () => {
       // ARRANGE
       // ASSERT
       // ACT
-      expect(x.isCharacterAVowel('a')).to.be.true;
+      expect(x.isCharacterAVowel('a')).to.be.true
       expect(x.isCharacterAVowel('e')).to.be.true;
       expect(x.isCharacterAVowel('i')).to.be.true;
       expect(x.isCharacterAVowel('o')).to.be.true;
@@ -246,7 +247,7 @@ describe('JavaScript Functions Lab', () => {
 
 
   describe('#characterCounts()', () => {
-    it('should return the character count for each string', () => {
+    it('should return the letter count for each string', () => {
       // ARRANGE
       const expected = {
         ' ': 1,
