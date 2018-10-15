@@ -1,7 +1,14 @@
-/* eslint-env mocha, browser, node */
+/* eslint-env jest, browser, node */
 /* global expect: true, x:true */
 
+
 describe('JavaScript Functions Lab', () => {
+  let fns;
+
+  beforeAll(() => {
+    fns = require('../functions');
+  });
+
   describe('#maxOfTwoNumbers()', () => {
     it('should return the max of 2 numbers if the first is smaller', () => {
       // ARRANGE
@@ -10,10 +17,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ACT
-      const actual = x.maxOfTwoNumbers(smaller, larger);
+      const actual = fns.maxOfTwoNumbers(smaller, larger);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
     it('should return the max of 2 numbers if the first is larger', () => {
@@ -23,10 +30,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ASSERT
-      const actual = x.maxOfTwoNumbers(larger, smaller);
+      const actual = fns.maxOfTwoNumbers(larger, smaller);
 
       // ACT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
     it('should return the correct answer if the args are equal', () => {
@@ -36,10 +43,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ASSERT
-      const actual = x.maxOfTwoNumbers(larger, smaller);
+      const actual = fns.maxOfTwoNumbers(larger, smaller);
 
       // ACT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
     it('should even work with letters', () => {
@@ -49,10 +56,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = larger;
 
       // ASSERT
-      const actual = x.maxOfTwoNumbers(larger, smaller);
+      const actual = fns.maxOfTwoNumbers(larger, smaller);
 
       // ACT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
   });
 
@@ -65,10 +72,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = largest;
 
       // ASSERT
-      const actual = x.maxOfThree(first, second, largest);
+      const actual = fns.maxOfThree(first, second, largest);
 
       // ACT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
 
@@ -80,10 +87,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = largest;
 
       // ASSERT
-      const actual = x.maxOfThree(largest, first, second);
+      const actual = fns.maxOfThree(largest, first, second);
 
       // ACT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
 
@@ -95,10 +102,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = largest;
 
       // ASSERT
-      const actual = x.maxOfThree(first, largest, second);
+      const actual = fns.maxOfThree(first, largest, second);
 
       // ACT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
 
@@ -109,9 +116,9 @@ describe('JavaScript Functions Lab', () => {
 
     //   // ASSERT
     //   // ACT
-    //   expect(() => x.maxOfThree(first, second)).to.throw();
-    //   expect(() => x.maxOfThree(first)).to.throw();
-    //   expect(() => x.maxOfThree()).to.throw();
+    //   expect(() => fns.maxOfThree(first, second)).to.throw();
+    //   expect(() => fns.maxOfThree(first)).to.throw();
+    //   expect(() => fns.maxOfThree()).to.throw();
     // });
   });
 
@@ -120,13 +127,13 @@ describe('JavaScript Functions Lab', () => {
       // ARRANGE
       // ASSERT
       // ACT
-      expect(x.isCharacterAVowel('a')).to.be.true
-      expect(x.isCharacterAVowel('e')).to.be.true;
-      expect(x.isCharacterAVowel('i')).to.be.true;
-      expect(x.isCharacterAVowel('o')).to.be.true;
-      expect(x.isCharacterAVowel('u')).to.be.true;
-      expect(x.isCharacterAVowel('y')).to.be.false;
-      expect(x.isCharacterAVowel('x')).to.be.false;
+      expect(fns.isCharacterAVowel('a')).toBe(true);
+      expect(fns.isCharacterAVowel('e')).toBe(true);
+      expect(fns.isCharacterAVowel('i')).toBe(true);
+      expect(fns.isCharacterAVowel('o')).toBe(true);
+      expect(fns.isCharacterAVowel('u')).toBe(true);
+      expect(fns.isCharacterAVowel('y')).toBe(false);
+      expect(fns.isCharacterAVowel('x')).toBe(false);
     });
   });
 
@@ -137,10 +144,10 @@ describe('JavaScript Functions Lab', () => {
       const arr = [900, 400, 400, 10, 17, 2100];
 
       // ACT
-      const actual = x.sumArray(arr);
+      const actual = fns.sumArray(arr);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
   });
 
@@ -151,10 +158,10 @@ describe('JavaScript Functions Lab', () => {
       const arr = [9, 400, 400, 10, 17, 2101];
 
       // ACT
-      const actual = x.multiplyArray(arr);
+      const actual = fns.multiplyArray(arr);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
     it('should produce 0 when multiplied by 0', () => {
@@ -163,10 +170,10 @@ describe('JavaScript Functions Lab', () => {
       const arr = [9, 400, 400, 10, 17, 2101, 0];
 
       // ACT
-      const actual = x.multiplyArray(arr);
+      const actual = fns.multiplyArray(arr);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
   });
 
@@ -177,10 +184,10 @@ describe('JavaScript Functions Lab', () => {
       const args = [6, 3, 'bar', [], {}, () => {}];
 
       // ACT
-      const actual = x.numberOfArguments(...args);
+      const actual = fns.numberOfArguments(...args);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
     it('should count the args when given none', () => {
@@ -188,10 +195,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = 0;
 
       // ACT
-      const actual = x.numberOfArguments();
+      const actual = fns.numberOfArguments();
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
   });
 
@@ -201,10 +208,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = 'ylbmessA lareneG ';
 
       // ACT
-      const actual = x.reverseString(' General Assembly');
+      const actual = fns.reverseString(' General Assembly');
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
 
     it('should reverse the string', () => {
@@ -212,10 +219,10 @@ describe('JavaScript Functions Lab', () => {
       const expected = 'ylbmessA lareneG';
 
       // ACT
-      const actual = x.reverseString('General Assembly');
+      const actual = fns.reverseString('General Assembly');
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
   });
 
@@ -225,49 +232,34 @@ describe('JavaScript Functions Lab', () => {
       const expected = 7;
 
       // ACT
-      const actual = x.findLongestWord(['short', 'longest', 'longer']);
+      const actual = fns.findLongestWord(['short', 'longest', 'longer']);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toBe(expected);
     });
   });
 
   describe('#filterLongWords()', () => {
     it('should return only words longer than i', () => {
-      // ARRANGE
-      const expected = ['longest', 'longer'];
-
+      // ARRANGE (see snapshot)
       // ACT
-      const actual = x.filterLongWords(['short', 'longest', 'longer'], 5);
+      const actual = fns.filterLongWords(['short', 'longest', 'longer'], 5);
 
       // ASSERT
-      expect(actual).to.eql(expected);
+      expect(actual).toMatchSnapshot();
     });
   });
 
 
   describe('#characterCounts()', () => {
     it('should return the letter count for each string', () => {
-      // ARRANGE
-      const expected = {
-        ' ': 1,
-        a: 2,
-        b: 1,
-        e: 3,
-        g: 1,
-        l: 2,
-        m: 1,
-        n: 1,
-        r: 1,
-        s: 2,
-        y: 1,
-      };
+      // ARRANGE (see snapshot)
 
       // ACT
-      const actual = x.characterCounts('General Assembly');
+      const actual = fns.characterCounts('General Assembly');
 
       // ASSERT
-      expect(actual).to.deep.eql(expected);
+      expect(actual).toMatchSnapshot();
     });
   });
 });
