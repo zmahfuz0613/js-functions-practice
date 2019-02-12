@@ -1,4 +1,4 @@
-# Functions Lab
+# Functions Practice
 
 ## Introduction
 > ***Note:*** _This can be a pair programming activity or done independently._
