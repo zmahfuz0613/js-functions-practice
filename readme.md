@@ -24,12 +24,6 @@ Run one of the following commands in the Terminal (in this folder):
   - The tests will initially fail (red).
   - Correct functions will cause the tests to pass (green).
 
-### Deliverable
-
-When you've completed the lab, 
-1. Commit it and push to Github Enterprise. 
-2. Create a pull request with your solution.
-
 ## Additional Resources
 1. [MDN Functions]
 1. [MDN Array]
