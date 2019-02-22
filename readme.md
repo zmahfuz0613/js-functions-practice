@@ -1,14 +1,5 @@
 # Functions Practice
 
-## Introduction
-> ***Note:*** _This can be a pair programming activity or done independently._
-
-Let's practice writing some functions! 
-
-This exercise includes **unit tests**, so you'll be able to see instantly if your functions work properly by running tests, and passing them.
-
-> Read more: [Test-Driven Development]
-
 ### Getting Started
 
 1. Fork this repo into your account.
