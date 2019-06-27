@@ -21,6 +21,7 @@ const jsFunctionsLab = (() => {
     // CODE HERE
   }
 
+  console.log(maxOfTwoNumbers(99, 5) + ' <= this answer should be 99');
   // Question 2
   /**
    * @func maxOfThree
@@ -37,6 +38,7 @@ const jsFunctionsLab = (() => {
   function maxOfThree(x, y, z) {
     // CODE HERE
   }
+  console.log(maxOfThree(4, 5, 9) + ' <= this answer should be 9')
 
   // Question 3
   /**
@@ -56,7 +58,8 @@ const jsFunctionsLab = (() => {
   function isCharacterAVowel(letter) {
     // CODE HERE
   }
-
+  console.log(isCharacterAVowel('a') + ' <= this answer should be true')
+  console.log(isCharacterAVowel('n') + ' <= this answer should be false')
 
   // Question 4
   /**
@@ -66,14 +69,14 @@ const jsFunctionsLab = (() => {
    * @returns {Number} the sum of the items in the array
    * BONUS: this can be done on one line!
    * @example
-> sumArray(1, 2, 3, 4)
+> sumArray([1, 2, 3, 4])
 => 10
    */
 
   function sumArray(arr) {
     // CODE HERE
   }
-
+  console.log(sumArray([1, 2, 3, 4]) + ' <= this answer should be 10')
 
   // Question 5
   /**
@@ -83,14 +86,14 @@ const jsFunctionsLab = (() => {
    * @returns {Number} the product of the items in the array
    * BONUS: this can be done on one line!
    * @example
-> multiplyArray(1, 2, 3, 4)
+> multiplyArray([1, 2, 3, 4])
 => 24
    */
 
   function multiplyArray(arr) {
     // CODE HERE
   }
-
+  console.log(sumArray([1, 2, 3, 4]) + ' <= this answer should be 24')
 
   // Question 6
   /**
@@ -106,6 +109,7 @@ const jsFunctionsLab = (() => {
   function reverseString(stringToReverse) {
     // CODE HERE
   }
+  console.log(reverseString('General Assembly') + ' <= this answer should be "ylbmessA lareneG"')
 
   // Question 7
   /**
@@ -121,11 +125,12 @@ const jsFunctionsLab = (() => {
   function findLongestWord(arrayOfWords) {
     // CODE HERE
   }
+  console.log(findLongestWord(['short', 'longest', 'longer']) + ' <= this answer should be 7')
 
   // Question 8
   /**
    * @func filterLongWords
-   * @desc Takes an array of words, returns only the words that are longer than 'i' chars.
+   * @desc Takes an array of words, returns only the words that are longer than 'i'(second argument) chars.
    * @param {Array} arrayOfWords - an array of words
    * @param {Number} i
    * @returns {Array} a new array of words that are longer than `i` characters long.
@@ -137,6 +142,7 @@ const jsFunctionsLab = (() => {
   function filterLongWords(arrayOfWords) {
     // CODE HERE
   }
+  console.log(filterLongWords(['short', 'longest', 'longer'], 5) + ` <= this answer should be ['longest', 'longer']`)
 
   // Bonus 1
   /**
@@ -149,7 +155,7 @@ const jsFunctionsLab = (() => {
    * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
    * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
    * @example
-> characterCounts('General Assembly NYC');
+> characterCounts('General Assembly NYC')
 => {
   a: 2,
   b: 1,
@@ -169,7 +175,19 @@ const jsFunctionsLab = (() => {
   function characterCounts(stringToCount) {
     // CODE HERE
   }
-
+  console.log(characterCounts('General Assembly NYC') + ` <= this answer should be {
+    a: 2,
+    b: 1,
+    c: 1,
+    e: 3,
+    g: 1,
+    l: 2,
+    m: 1,
+    n: 2,
+    r: 1,
+    s: 2,
+    y: 2
+  }`)
 
   // Bonus 2
   /**
@@ -188,7 +206,8 @@ const jsFunctionsLab = (() => {
   function numberOfArguments() {
     // CODE HERE
   }
-
+  console.log(numberOfArguments(6, 3, 8, 2, 'bar', 'foo') + ` <= this answer should be 6`)
+  console.log(numberOfArguments() + ` <= this answer should be 0`)
 
   /* ******* */
   return {
