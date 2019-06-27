@@ -6,7 +6,7 @@
 
 1. Fork this repo into your account.
 1. Once the forking is complete, create a feature branch, and **clone** the repo onto your computer.
-1. From the command-line: 
+1. From the command-line:
     - `npm i` (this will get all the tools necessary for this exercise).
     - `git checkout -b solution` to start working on a new solution.
 1. Open `functions.js`
@@ -16,15 +16,7 @@
 
 ### Writing Code and Running Tests
 
-Run one of the following commands in the Terminal (in this folder):
-
-| To see tests in the browser... | To see tests in the terminal...|
-|----|----|
-| run `npm start` | run `npm test`|
-| Reload to see changes | Watches for changes; <br> no reload necessary; <br> `ctrl-c` to quit|
-
-  - The tests will initially fail (red).
-  - Correct functions will cause the tests to pass (green).
+Use the `node functions.js` to run your code.
 
 ## Additional Resources
 1. [MDN Functions]
