@@ -15,7 +15,6 @@ This exercise includes **unit tests**, so you'll be able to see instantly if you
 1. Once the forking is complete, **clone** the repo onto your computer.
 1. From the command-line: 
     - `npm i` (this will get all the tools necessary for this exercise).
-    - `git checkout -b solution` to start working on a new solution.
 1. Open `functions.js`
     - Each function and its behavior are described in the comments
     - All the function names are already inside the file; you just need to implement the function by adding code inside each one.
@@ -25,10 +24,10 @@ This exercise includes **unit tests**, so you'll be able to see instantly if you
 
 Run one of the following commands in the Terminal (in this folder):
 
-| To see tests in the browser... | To see tests in the terminal...|
+|  To see tests in the terminal...|
 |----|----|
-| run `npm start` | run `npm test`|
-| Reload to see changes | Watches for changes; <br> no reload necessary; <br> `ctrl-c` to quit|
+| run `npm test`|
+| Watches for changes; <br> no reload necessary; <br> `ctrl-c` to quit|
 
   - The tests will initially fail (red).
   - Correct functions will cause the tests to pass (green).
