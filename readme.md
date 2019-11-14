@@ -25,7 +25,7 @@ This exercise includes **unit tests**, so you'll be able to see instantly if you
 Run one of the following commands in the Terminal (in this folder):
 
 |  To see tests in the terminal...|
-|----|----|
+|---|
 | run `npm test`|
 | Watches for changes; <br> no reload necessary; <br> `ctrl-c` to quit|
 
