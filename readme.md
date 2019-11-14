@@ -35,7 +35,7 @@ Run one of the following commands in the Terminal (in this folder):
 
   Of course, you can also run your code directly if you like, with:
   ```bash
-  node fuctions.js
+  node functions.js
   ```
 
 ### Deliverable
