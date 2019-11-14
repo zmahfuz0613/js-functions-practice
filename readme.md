@@ -1,7 +1,7 @@
 # Functions Lab
 
 ## Introduction
-> ***Note:*** _This can be a pair programming activity or done independently._
+
 
 Let's practice writing some functions! 
 
