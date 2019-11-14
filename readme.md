@@ -32,6 +32,12 @@ Run one of the following commands in the Terminal (in this folder):
   - The tests will initially fail (red).
   - Correct functions will cause the tests to pass (green).
 
+
+  Of course, you can also run your code directly if you like, with:
+  ```bash
+  node fuctions.js
+  ```
+
 ### Deliverable
 
 When you've completed the lab, 
