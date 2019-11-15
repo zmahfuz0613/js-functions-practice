@@ -177,31 +177,6 @@ describe('JavaScript Functions Lab', () => {
     });
   });
 
-  describe('#numberOfArguments()', () => {
-    it('should count the args when given some', () => {
-      // ARRANGE
-      const expected = 6;
-      const args = [6, 3, 'bar', [], {}, () => {}];
-
-      // ACT
-      const actual = fns.numberOfArguments(...args);
-
-      // ASSERT
-      expect(actual).toBe(expected);
-    });
-
-    it('should count the args when given none', () => {
-      // ARRANGE
-      const expected = 0;
-
-      // ACT
-      const actual = fns.numberOfArguments();
-
-      // ASSERT
-      expect(actual).toBe(expected);
-    });
-  });
-
   describe('#reverseString()', () => {
     it('should deal with spaces appropriately', () => {
       // ARRANGE
@@ -250,7 +225,6 @@ describe('JavaScript Functions Lab', () => {
     });
   });
 
-
   describe('#characterCounts()', () => {
     it('should return the letter count for each string', () => {
       // ARRANGE (see snapshot)
@@ -260,6 +234,31 @@ describe('JavaScript Functions Lab', () => {
 
       // ASSERT
       expect(actual).toMatchSnapshot();
+    });
+  });
+  
+    describe('#numberOfArguments()', () => {
+    it('should count the args when given some', () => {
+      // ARRANGE
+      const expected = 6;
+      const args = [6, 3, 'bar', [], {}, () => {}];
+
+      // ACT
+      const actual = fns.numberOfArguments(...args);
+
+      // ASSERT
+      expect(actual).toBe(expected);
+    });
+
+    it('should count the args when given none', () => {
+      // ARRANGE
+      const expected = 0;
+
+      // ACT
+      const actual = fns.numberOfArguments();
+
+      // ASSERT
+      expect(actual).toBe(expected);
     });
   });
 });
