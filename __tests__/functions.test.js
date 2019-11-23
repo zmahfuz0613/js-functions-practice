@@ -109,17 +109,6 @@ describe('JavaScript Functions Lab', () => {
     });
 
 
-    // it('should fail if not given three arguments', () => {
-    //   // ARRANGE
-    //   const first = -40;
-    //   const second = 5000;
-
-    //   // ASSERT
-    //   // ACT
-    //   expect(() => fns.maxOfThree(first, second)).to.throw();
-    //   expect(() => fns.maxOfThree(first)).to.throw();
-    //   expect(() => fns.maxOfThree()).to.throw();
-    // });
   });
 
   describe('#isCharacterAVowel()', () => {
