@@ -41,12 +41,7 @@ Run one of the following commands in the Terminal (in this folder):
   node functions.js
   ```
 
-### Deliverable
 
-When you've completed the lab, 
-1. Commit it and push to Github Enterprise. 
-2. Create a pull request with your solution.
-=======
 
 
 ## Additional Resources
