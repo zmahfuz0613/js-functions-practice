@@ -1,4 +1,5 @@
-# Functions Lab
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  SOFTWARE ENGINEERING IMMERSIVE
+
 
 ## Introduction
 
@@ -9,11 +10,12 @@ This exercise includes **unit tests**, so you'll be able to see instantly if you
 
 > Read more: [Test-Driven Development]
 
+
 ### Getting Started
 
 1. Fork this repo into your account.
-1. Once the forking is complete, **clone** the repo onto your computer.
-1. From the command-line: 
+1. Once the forking is complete and **clone** the repo onto your computer.
+1. From the command-line:
     - `npm i` (this will get all the tools necessary for this exercise).
 1. Open `functions.js`
     - Each function and its behavior are described in the comments
@@ -21,6 +23,7 @@ This exercise includes **unit tests**, so you'll be able to see instantly if you
     - Additionally, you can take a look at the full [function documentation].
 
 ### Writing Code and Running Tests
+
 
 Run one of the following commands in the Terminal (in this folder):
 
@@ -43,15 +46,15 @@ Run one of the following commands in the Terminal (in this folder):
 When you've completed the lab, 
 1. Commit it and push to Github Enterprise. 
 2. Create a pull request with your solution.
+=======
+
 
 ## Additional Resources
 1. [MDN Functions]
 1. [MDN Array]
 1. [MDN String]
 1. [MDN Object]
-1. [Test-Driven Development]
 
-[Test-Driven Development]: https://en.wikipedia.org/wiki/Test-driven_development#Test-driven_development_cycle
 [MDN Functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 [MDN Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_ObjectsArray
 [MDN String]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_ObjectsString

@@ -1,7 +1,7 @@
 {
-  "name": "js-functions-lab",
+  "name": "js-functions-practice",
   "version": "1.5.0",
-  "description": "JavaScript Functions Lab",
+  "description": "JavaScript Functions Practice",
   "private": true,
   "scripts": {
     "lint": "eslint . --fix",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.generalassemb.ly:wdi-nyc/js-functions-lab.git"
+    "url": "git@git.generalassemb.ly:wdi-nyc-terabyte/js-functions-practice.git"
   },
   "keywords": [
     "javascript",
