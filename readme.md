@@ -1,6 +1,15 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  SOFTWARE ENGINEERING IMMERSIVE
 
-# Functions Practice
+
+## Introduction
+
+
+Let's practice writing some functions! 
+
+This exercise includes **unit tests**, so you'll be able to see instantly if your functions work properly by running tests, and passing them.
+
+> Read more: [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
+
 
 ### Getting Started
 
@@ -15,7 +24,25 @@
 
 ### Writing Code and Running Tests
 
-Use the `node functions.js` to run your code.
+
+Run one of the following commands in the Terminal (in this folder):
+
+|  To see tests in the terminal...|
+|---|
+| run `npm test`|
+| Watches for changes; <br> no reload necessary; <br> `ctrl-c` to quit|
+
+  - The tests will initially fail (red).
+  - Correct functions will cause the tests to pass (green).
+
+
+  Of course, you can also run your code directly if you like, with:
+  ```bash
+  node functions.js
+  ```
+
+
+
 
 ## Additional Resources
 1. [MDN Functions]
