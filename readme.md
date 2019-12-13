@@ -8,7 +8,7 @@ Let's practice writing some functions!
 
 This exercise includes **unit tests**, so you'll be able to see instantly if your functions work properly by running tests, and passing them.
 
-> Read more: [Test-Driven Development]
+> Read more: [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
 
 
 ### Getting Started
