@@ -93,7 +93,7 @@ const jsFunctionsLab = (() => {
   function multiplyArray(arr) {
     // CODE HERE
   }
-  console.log(sumArray([1, 2, 3, 4]) + ' <= this answer should be 24')
+  console.log(multiplyArray([1, 2, 3, 4]) + ' <= this answer should be 24')
 
   // Question 6
   /**
@@ -139,7 +139,7 @@ const jsFunctionsLab = (() => {
 => ['longest', 'longer']
    */
 
-  function filterLongWords(arrayOfWords) {
+  function filterLongWords(arrayOfWords, length) {
     // CODE HERE
   }
   console.log(filterLongWords(['short', 'longest', 'longer'], 5) + ` <= this answer should be ['longest', 'longer']`)
