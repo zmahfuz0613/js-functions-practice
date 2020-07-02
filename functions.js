@@ -75,7 +75,7 @@ const jsFunctionsLab = (() => {
   function isCharacterAVowel(letter) {
     // CODE HERE
 
-    return letter.match('a|e|i|o|u|i') ? true : false;
+    return letter.match('a|e|i|o|u|i') ? true : false;         
 }
 
 
@@ -96,6 +96,13 @@ const jsFunctionsLab = (() => {
 
   function sumArray(arr) {
     // CODE HERE
+
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i]
+    }
+    return sum
+  
   }
   console.log(sumArray([1, 2, 3, 4]) + ' <= this answer should be 10')
 
@@ -145,6 +152,7 @@ const jsFunctionsLab = (() => {
 
   function findLongestWord(arrayOfWords) {
     // CODE HERE
+  
   }
   console.log(findLongestWord(['short', 'longest', 'longer']) + ' <= this answer should be 7')
 
