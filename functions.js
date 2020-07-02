@@ -120,7 +120,15 @@ const jsFunctionsLab = (() => {
 
   function multiplyArray(arr) {
     // CODE HERE
+
+    let sum = 1
+    for (let i = 0; i < arr.length; i++) {
+      sum *= arr[i]
+    }
+    return sum
+  
   }
+  
   console.log(multiplyArray([1, 2, 3, 4]) + ' <= this answer should be 24')
 
   // Question 6
@@ -136,6 +144,9 @@ const jsFunctionsLab = (() => {
 
   function reverseString(stringToReverse) {
     // CODE HERE
+
+
+    
   }
   console.log(reverseString('General Assembly') + ' <= this answer should be "ylbmessA lareneG"')
 
