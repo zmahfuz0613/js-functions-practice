@@ -19,6 +19,12 @@ const jsFunctionsLab = (() => {
 
   function maxOfTwoNumbers(x, y) {
     // CODE HERE
+    if (x > y) {
+      return x
+
+    } else
+      
+      return y
   }
 
   console.log(maxOfTwoNumbers(99, 5) + ' <= this answer should be 99');
@@ -37,6 +43,17 @@ const jsFunctionsLab = (() => {
 
   function maxOfThree(x, y, z) {
     // CODE HERE
+    if (x > y) {
+      return x
+
+    } else if (y > z){
+      
+      return y
+    
+  } else
+
+  return z
+
   }
   console.log(maxOfThree(4, 5, 9) + ' <= this answer should be 9')
 
@@ -57,7 +74,11 @@ const jsFunctionsLab = (() => {
 
   function isCharacterAVowel(letter) {
     // CODE HERE
-  }
+
+    return letter.match('a|e|i|o|u|i') ? true : false;
+}
+
+
   console.log(isCharacterAVowel('a') + ' <= this answer should be true')
   console.log(isCharacterAVowel('n') + ' <= this answer should be false')
 
