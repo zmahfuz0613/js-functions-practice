@@ -145,8 +145,16 @@ const jsFunctionsLab = (() => {
   function reverseString(stringToReverse) {
     // CODE HERE
 
+    let result = []
+    let n = stringToReverse.length
+    while (n >= 0) {
+      result.push(stringToReverse[n])
 
-    
+      n--
+    }
+
+    return result.join("")
+
   }
   console.log(reverseString('General Assembly') + ' <= this answer should be "ylbmessA lareneG"')
 
