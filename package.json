@@ -41,7 +41,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.9.0",
     "jasmine-fail-fast": "^2.0.0",
-    "jest": "^23.6.0",
+    "jest": "^29.3.1",
     "jsdoc-to-markdown": "^4.0.1"
   },
   "dependencies": {}
